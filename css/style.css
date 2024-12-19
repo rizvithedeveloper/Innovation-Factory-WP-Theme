@@ -199,6 +199,11 @@ pre {
     font-size: 18px;
   }
 }
+@media (max-width: 675px) {
+  .section-heading .pre-heading.large {
+    font-size: 16px;
+  }
+}
 .section-heading h1 {
   font-size: 70px;
   line-height: 79.24px;
@@ -221,6 +226,24 @@ pre {
   .section-heading h1 {
     font-size: 40px;
     line-height: 50px;
+  }
+}
+@media (max-width: 575px) {
+  .section-heading h1 {
+    font-size: 35px;
+    line-height: 40px;
+  }
+}
+@media (max-width: 575px) {
+  .section-heading h1 {
+    font-size: 35px;
+    line-height: 40px;
+  }
+}
+@media (max-width: 414px) {
+  .section-heading h1 {
+    font-size: 30px;
+    line-height: 38px;
   }
 }
 .section-heading h2 {
@@ -318,7 +341,8 @@ pre {
 }
 @media (max-width: 767px) {
   .custom-button {
-    font-size: 15px;
+    font-size: 14px;
+    padding: 10px 25px;
   }
 }
 .custom-button.gradient {
@@ -562,8 +586,15 @@ pre {
   padding-top: 100px;
   position: relative;
 }
-.sub-pages-banner:not(.black) {
-  height: calc(100vh + 20px);
+@media (min-width: 676px) {
+  .sub-pages-banner:not(.black) {
+    height: calc(100vh + 20px);
+  }
+}
+@media (max-width: 675px) {
+  .sub-pages-banner:not(.black) {
+    min-height: 50vh;
+  }
 }
 .sub-pages-banner:not(.black)::after {
   content: "";
@@ -578,6 +609,11 @@ pre {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom;
+}
+@media (max-width: 675px) {
+  .sub-pages-banner:not(.black)::after {
+    height: 130px;
+  }
 }
 .sub-pages-banner .row {
   text-align: center;
@@ -601,8 +637,12 @@ pre {
   background: linear-gradient(180deg, #07040b 0%, #100919 30.58%, rgba(16, 9, 25, 0) 98.66%);
 }
 .sub-pages-banner.black .row {
-  height: 50vh;
   align-items: center;
+}
+@media (min-width: 676px) {
+  .sub-pages-banner.black .row {
+    height: 50vh;
+  }
 }
 
 /*--### CALL TO ACTION SECTION ###--*/
@@ -1154,11 +1194,17 @@ header .navbar .navbar-brand {
   color: #ffffff;
   transition: 0.3s all !important;
   font-weight: 600;
+  height: 66px;
+}
+header .navbar .navbar-brand img {
+  height: 100%;
+  object-fit: contain;
 }
 @media (max-width: 991px) {
   header .navbar .navbar-brand {
     font-size: 20px;
     line-height: 22px;
+    height: 60px;
   }
 }
 header .navbar .navbar-brand span {
@@ -1207,6 +1253,16 @@ header .navbar .navbar-collapse .navbar-nav {
 }
 header .navbar .navbar-collapse .navbar-nav li {
   margin-right: 40px;
+}
+@media (min-width: 992px) {
+  header .navbar .navbar-collapse .navbar-nav li.dropdown::before {
+    content: "";
+    display: block;
+    height: 11px;
+    width: 80px;
+    position: absolute;
+    bottom: -10px;
+  }
 }
 header .navbar .navbar-collapse .navbar-nav li.dropdown .dropdown-toggle {
   display: flex;
@@ -1487,7 +1543,11 @@ header .navbar .navbar-toggler {
 .hero-slider {
   padding: 0;
   position: relative;
-  height: calc(100vh + 20px);
+}
+@media (min-width: 676px) {
+  .hero-slider {
+    height: calc(100vh + 20px);
+  }
 }
 .hero-slider::after {
   content: "";
@@ -1502,6 +1562,11 @@ header .navbar .navbar-toggler {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom;
+}
+@media (max-width: 675px) {
+  .hero-slider::after {
+    height: 130px;
+  }
 }
 .hero-slider .slider {
   position: relative;
@@ -1529,7 +1594,7 @@ header .navbar .navbar-toggler {
 }
 @media (max-width: 767px) {
   .hero-slider .slider .slick-arrow {
-    display: none;
+    display: none !important;
   }
 }
 .hero-slider .slider .slick-arrow.slick-prev {
@@ -1565,11 +1630,21 @@ header .navbar .navbar-toggler {
 }
 .hero-slider .slider .slide {
   position: relative;
-  min-height: 100vh;
   height: 100%;
   display: flex;
   align-items: start;
   padding: 150px 0px 50px;
+}
+@media (min-width: 676px) {
+  .hero-slider .slider .slide {
+    min-height: 100vh;
+  }
+}
+@media (max-width: 675px) {
+  .hero-slider .slider .slide {
+    min-height: 50vh;
+    padding: 120px 0px 50px;
+  }
 }
 .hero-slider .slider .slide .row {
   position: relative;
@@ -2233,6 +2308,12 @@ footer .footer-logo {
   margin-bottom: 20px;
   transition: 0.3s all !important;
   font-weight: 600;
+  height: 80px;
+}
+footer .footer-logo img {
+  height: 100%;
+  object-fit: contain;
+  object-position: left;
 }
 @media (max-width: 991px) {
   footer .footer-logo {

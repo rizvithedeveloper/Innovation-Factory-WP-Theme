@@ -193,10 +193,17 @@ header {
       color: $white;
       transition: 0.3s all !important;
       font-weight: 600;
+      height: 66px;
+
+      img {
+        height: 100%;
+        object-fit: contain;
+      }
 
       @media (max-width: 991px) {
         font-size: 20px;
         line-height: 22px;
+        height: 60px;
       }
 
       span {
@@ -258,6 +265,16 @@ header {
           margin-right: 40px;
 
           &.dropdown {
+            @media (min-width: 992px) {
+              &::before {
+                content: "";
+                display: block;
+                height: 11px;
+                width: 80px;
+                position: absolute;
+                bottom: -10px;
+              }
+            }
             .dropdown-toggle {
               display: flex;
               align-items: center;

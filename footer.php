@@ -4,7 +4,8 @@
         <div class="row">
           <div class="col-md-4">
             <a href="<?php echo get_site_url(); ?>" class="footer-logo">
-              <span>Innovation</span> Factory
+              <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/Logo.png" alt="Logo" class="img-responsive">
+              <!-- <span>Innovation</span> Factory -->
             </a>
             <p class="footer-text">
               Innovation Factory is dedicated to developing sound & vision

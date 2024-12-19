@@ -161,7 +161,7 @@ get_header();
             <div class="card-box press">
               <a
                 class="image"
-                href="https://www.independent.co.uk/tv/lifestyle/ai-christmas-deer-train-tracks-b2467207"
+                href="https://www.independent.co.uk/tv/lifestyle/ai-christmas-deer-train-tracks-b2467207.html"
                 target="_blank"
               >
                 <img
@@ -174,7 +174,7 @@ get_header();
                 <p>December 20, 2023</p>
               </div>
               <a
-                href="https://www.independent.co.uk/tv/lifestyle/ai-christmas-deer-train-tracks-b2467207"
+                href="https://www.independent.co.uk/tv/lifestyle/ai-christmas-deer-train-tracks-b2467207.html"
                 target="_blank"
                 class="section-heading"
               >
@@ -187,7 +187,7 @@ get_header();
 
               <div class="link-wrapper">
                 <a
-                  href="https://www.independent.co.uk/tv/lifestyle/ai-christmas-deer-train-tracks-b2467207"
+                  href="https://www.independent.co.uk/tv/lifestyle/ai-christmas-deer-train-tracks-b2467207.html"
                   target="_blank"
                   class="link"
                   target="_blank"
@@ -203,7 +203,7 @@ get_header();
             <div class="card-box press">
               <a
                 class="image"
-                href="https://www.aol.co.uk/news/watch-ai-keep-deer-off-135511501?guce_referrer=aHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS8&guce_referrer_sig=AQAAAI7Xxoui5oM6_uTtwKZFPAI9GPIimnLpTgF0ThERZJvLnJG2z6wVluCbzeaoLCrvQ561qclQGsni4Bu2lPP0Y40ZGW_jsQDa7aImjb2CaLl_0eMhepr3OWVdhwHAJqrs7RgFnnaC7oaLxi399JjzRxCMpDs1krP0834wf4A6ifi-&_guc_consent_skip=1728437148"
+                href="https://www.aol.co.uk/news/watch-ai-keep-deer-off-135511501.html?soc_src=social-sh&soc_trk=ma"
                 target="_blank"
               >
                 <img
@@ -216,7 +216,7 @@ get_header();
                 <p>December 20, 2023</p>
               </div>
               <a
-                href="https://www.aol.co.uk/news/watch-ai-keep-deer-off-135511501?guce_referrer=aHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS8&guce_referrer_sig=AQAAAI7Xxoui5oM6_uTtwKZFPAI9GPIimnLpTgF0ThERZJvLnJG2z6wVluCbzeaoLCrvQ561qclQGsni4Bu2lPP0Y40ZGW_jsQDa7aImjb2CaLl_0eMhepr3OWVdhwHAJqrs7RgFnnaC7oaLxi399JjzRxCMpDs1krP0834wf4A6ifi-&_guc_consent_skip=1728437148"
+                href="https://www.aol.co.uk/news/watch-ai-keep-deer-off-135511501.html?soc_src=social-sh&soc_trk=ma"
                 target="_blank"
                 class="section-heading"
               >
@@ -231,7 +231,7 @@ get_header();
 
               <div class="link-wrapper">
                 <a
-                  href="https://www.aol.co.uk/news/watch-ai-keep-deer-off-135511501?guce_referrer=aHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS8&guce_referrer_sig=AQAAAI7Xxoui5oM6_uTtwKZFPAI9GPIimnLpTgF0ThERZJvLnJG2z6wVluCbzeaoLCrvQ561qclQGsni4Bu2lPP0Y40ZGW_jsQDa7aImjb2CaLl_0eMhepr3OWVdhwHAJqrs7RgFnnaC7oaLxi399JjzRxCMpDs1krP0834wf4A6ifi-&_guc_consent_skip=1728437148"
+                  href="https://www.aol.co.uk/news/watch-ai-keep-deer-off-135511501.html?soc_src=social-sh&soc_trk=ma"
                   target="_blank"
                   class="link"
                   target="_blank"

@@ -128,7 +128,7 @@ get_header();
             <div class="section-image">
               <video
                 playsinline
-                src="<?php echo esc_url(get_template_directory_uri()); ?>/videos/Cable_Metal_Theft_image_2.mp4"
+                src="<?php echo esc_url(get_template_directory_uri()); ?>/videos/Cable_Metal_Theft_image_2_V5.mp4"
                 loop
                 autoplay
                 muted="true"

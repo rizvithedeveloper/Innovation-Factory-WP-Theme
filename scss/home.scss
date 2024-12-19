@@ -2,7 +2,10 @@
 .hero-slider {
   padding: 0;
   position: relative;
-  height: calc(100vh + 20px);
+
+  @media (min-width: 676px) {
+    height: calc(100vh + 20px);
+  }
 
   &::after {
     content: "";
@@ -17,6 +20,10 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom;
+
+    @media (max-width: 675px) {
+      height: 130px;
+    }
   }
 
   .slider {
@@ -47,7 +54,7 @@
       @media (max-width: 767px) {
         // width: 30px;
         // height: 30px;
-        display: none;
+        display: none !important;
       }
 
       &.slick-prev {
@@ -93,11 +100,20 @@
 
     .slide {
       position: relative;
-      min-height: 100vh;
+
       height: 100%;
       display: flex;
       align-items: start;
       padding: 150px 0px 50px;
+
+      @media (min-width: 676px) {
+        min-height: 100vh;
+      }
+
+      @media (max-width: 675px) {
+        min-height: 50vh;
+        padding: 120px 0px 50px;
+      }
 
       // @media (max-width: 767px) {
       //   text-align: center;
@@ -447,16 +463,15 @@
     .section-heading {
       text-align: left;
     }
-    
-    .image{
-      @media (min-width:768px) {
-        height: 250px; 
+
+    .image {
+      @media (min-width: 768px) {
+        height: 250px;
       }
-      img{
+      img {
         height: 100%;
         object-fit: cover;
       }
-     
     }
   }
   [class*="col-"] {

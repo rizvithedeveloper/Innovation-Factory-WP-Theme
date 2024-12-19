@@ -42,7 +42,7 @@
       <div class="container">
         <nav class="navbar navbar-expand-lg navbar-light">
           <a class="navbar-brand" href="<?php echo get_site_url(); ?>">
-            <span>Innovation</span> Factory
+            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/Logo.png" alt="Logo" class="img-responsive">
           </a>
           <button
             class="navbar-toggler collapsed"
