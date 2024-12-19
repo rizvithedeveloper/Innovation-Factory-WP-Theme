@@ -1,0 +1,59 @@
+.press-section {
+  .row {
+    align-items: normal;
+    
+    [class*="col-md-"] {
+      @media (max-width: 991px) {
+        width: 50%;
+      }
+
+      @media (max-width: 767px) {
+        width: 100%;
+      }
+    }
+  }
+}
+.markets-section {
+  .row {
+    margin-top: 60px;
+    row-gap: 25px;
+    align-items: start;
+
+    [class*="col-md-"] {
+      @media (max-width: 991px) {
+        width: 50%;
+      }
+
+      @media (max-width: 767px) {
+        width: 100%;
+      }
+    }
+  }
+  .card-box.post {
+    .image {
+      img {
+        border-radius: 12px;
+      }
+    }
+
+    .section-text {
+      transition: 0.3s all;
+      height: fit-content;
+
+      &.hide {
+        height: 50px;
+        overflow: hidden;
+      }
+    }
+
+    .link-wrapper {
+      .link {
+        background: linear-gradient(
+          to bottom,
+          rgb(10 10 10 / 43%) 10%,
+          #0a0a0a 70%
+        );
+      }
+    }
+  }
+}

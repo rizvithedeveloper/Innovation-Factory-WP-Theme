@@ -1,0 +1,114 @@
+@mixin gradient-bg-animate {
+  background: linear-gradient(
+    -45deg,
+    $primary,
+    $gradientColor1,
+    $gradientColor1,
+    $primary,
+    $primary
+  );
+
+  background-size: 400% 400%;
+  animation: gradient 10s ease infinite;
+
+  &:hover {
+    animation: gradient 3s ease infinite;
+  }
+}
+
+// background: linear-gradient(90deg, #9F53ED 0%, #8C21F8 100%);
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@mixin gradient-bg-button {
+  // rgba(255, 255, 255, 0.28)
+  // background: linear-gradient(90deg, #1A123E 0%, #271640 100%);
+
+  background: linear-gradient(90deg, #1a123e 0%, #271640 100%) padding-box,
+    conic-gradient(
+        from var(--bg-angle),
+        $secondary 0deg,
+        rgba(255, 255, 255, 0.15) 180deg,
+        rgba(255, 255, 255, 0.15) 180deg,
+        $secondary 360deg
+      )
+      border-box;
+  border: 1px solid transparent;
+  animation: spin 3s infinite linear paused;
+
+  &:hover {
+    // animation-play-state: running;
+  }
+}
+
+@property --bg-angle {
+  inherits: false;
+  initial-value: 0deg;
+  syntax: "<angle>";
+}
+
+@keyframes spin {
+  to {
+    --bg-angle: 360deg;
+  }
+}
+
+@mixin bg-header-blur {
+  background: hsl(222.22deg 44.26% 11.96% / 26%);
+  backdrop-filter: blur(54px);
+  -moz-backdrop-filter: blur(54px);
+  -webkit-backdrop-filter: blur(54px);
+}
+
+@mixin text-gradient {
+  background: linear-gradient(to right, $primary, $secondary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+@mixin bg-card-box {
+  padding: 30px;
+  border-radius: 31px;
+}
+
+@mixin bg-card-animate {
+  // rgba(255, 255, 255, 0.28)
+  // background: linear-gradient(90deg, #1A123E 0%, #271640 100%);
+
+  background: linear-gradient(90deg, #0a0a0a, #0a0a0a) padding-box,
+    conic-gradient(
+        from var(--bg-angle),
+        #ffffff1c 0deg,
+        #ffffff1c 180deg,
+        #ffffff1c 180deg,
+        #ffffff1c 360deg
+      )
+      border-box;
+  border: 1px solid transparent;
+  animation: spin 3s infinite linear paused;
+
+  &:hover {
+    background: linear-gradient(90deg, #0a0a0a, #0a0a0a) padding-box,
+      conic-gradient(
+          from var(--bg-angle),
+          $secondary 0deg,
+          rgba(255, 255, 255, 0.15) 180deg,
+          rgba(255, 255, 255, 0.15) 180deg,
+          $secondary 360deg
+        )
+        border-box;
+
+    // animation-play-state: running;
+  }
+}

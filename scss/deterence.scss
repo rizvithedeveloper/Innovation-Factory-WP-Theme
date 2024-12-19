@@ -1,0 +1,178 @@
+/*-- ## HEADER ## --*/
+.tabs-content-wrapper {
+  .row {
+    justify-content: space-between;
+  }
+  .section-heading {
+    // text-align: center;
+  }
+
+  .tabs-icon-boxes-section{
+    padding-bottom: 60px;
+
+    @media (max-width: 767px) {
+      padding-bottom: 30px;
+      
+    }
+  }
+
+  .button-wrapper {
+    display: flex;
+    justify-content: center;
+  
+  }
+  .tabs-btns-wrapper {
+    overflow-x: auto;
+    width: fit-content;
+    max-width: 100%;
+    margin: 0 auto;
+
+    @media (max-width: 991px) {
+      max-width: calc(100% - 30px);
+    }
+  }
+  .nav-pills {
+    width: fit-content;
+    margin: 0 auto;
+    gap: 40px;
+    display: flex;
+    flex-wrap: nowrap;
+
+    .nav-item {
+      display: flex;
+      max-width: calc(100% / 7);
+      min-width: 104px;
+    }
+
+    button {
+      width: 100%;
+      padding: 0;
+
+      .icon {
+        background-color: #141414;
+        padding: 15px;
+        height: 104px;
+        width: 100%;
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 10px;
+        transition: 0.3s all;
+
+        img {
+          width: 48px;
+          max-height: 45px;
+        }
+      }
+
+      span {
+        color: $white;
+        opacity: 0.47;
+        font-weight: 300;
+        font-size: 15px;
+        transition: 0.3s all;
+      }
+
+      &.active {
+        .icon {
+          @include gradient-bg-animate;
+        }
+
+        span {
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  .section-image {
+    img,
+    video {
+      width: 100%;
+      //   object-fit: cover;
+    }
+  }
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  background: transparent;
+  .icon {
+    @include gradient-bg-animate;
+  }
+}
+
+/*---### TABS ICON BOXES SECTION ###---*/
+.tabs-icon-boxes-section {
+  .section-heading {
+    max-width: 670px;
+    margin: 0 auto;
+  }
+
+  .row {
+    width: 80%;
+    margin: 0 auto;
+    justify-content: space-around;
+    align-items: normal;
+    padding: 40px 0px;
+    row-gap: 40px;
+    border: none;
+
+    .col-md-5 {
+      padding: 0 30px;
+    }
+
+    svg {
+      width: 100%;
+    }
+
+    @media (max-width: 991px) {
+      width: 100%;
+    }
+
+    &.card-box {
+      .icon {
+        width: 85px;
+        height: 85px;
+
+        @media (max-width: 991px) {
+          width: 70px;
+          height: 70px;
+        }
+      }
+    }
+  }
+}
+
+.icon-boxes-section {
+  .row {
+    align-items: normal;
+
+    [class*="col-md"] {
+      @media (max-width: 991px) {
+        width: 50%;
+      }
+
+      @media (max-width: 767px) {
+        width: 100%;
+      }
+    }
+  }
+}
+
+/*---## DETERENCE WORKS SECTION ##---*/
+.deterence-works-section {
+  .row {
+    position: relative;
+  }
+  .section-heading {
+    position: absolute;
+    left: 50px;
+    top: 70px;
+
+    @media (max-width: 991px) {
+      position: initial;
+    }
+  }
+}
