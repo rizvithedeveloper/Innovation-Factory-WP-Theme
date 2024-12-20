@@ -1906,7 +1906,7 @@ get_header();
                   <div class="section-image">
                     <video
                       playsinline
-                      src="<?php echo esc_url(get_template_directory_uri()); ?>/videos/Kangaroo_Image_1.mp4"
+                      src="<?php echo esc_url(get_template_directory_uri()); ?>/videos/Kangaroo_Image_1-8x-Thicker.mp4"
                       loop
                       autoplay
                       muted="true"

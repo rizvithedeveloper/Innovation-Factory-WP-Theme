@@ -1198,6 +1198,7 @@ header .navbar .navbar-brand {
 }
 header .navbar .navbar-brand img {
   height: 100%;
+  width: 100%;
   object-fit: contain;
 }
 @media (max-width: 991px) {
@@ -1205,6 +1206,12 @@ header .navbar .navbar-brand img {
     font-size: 20px;
     line-height: 22px;
     height: 60px;
+  }
+}
+@media (max-width: 575px) {
+  header .navbar .navbar-brand {
+    height: 50px;
+    width: 102px;
   }
 }
 header .navbar .navbar-brand span {
@@ -2319,6 +2326,7 @@ footer .footer-logo img {
   footer .footer-logo {
     font-size: 20px;
     line-height: 22px;
+    max-width: 160px;
   }
   footer .footer-logo span {
     font-size: 20px !important;
