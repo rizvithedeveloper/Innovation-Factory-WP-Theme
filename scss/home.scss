@@ -207,6 +207,14 @@
       font-weight: 700;
     }
   }
+
+  .marquee-content {
+    li img {
+      height: 25px;
+      object-fit: contain;
+      object-position: center;
+    }
+  }
 }
 
 /*---## ABOUT SECTION ##---*/

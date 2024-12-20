@@ -1697,6 +1697,11 @@ header .navbar .navbar-toggler {
   font-size: 25px;
   font-weight: 700;
 }
+.partners-logo .marquee-content li img {
+  height: 25px;
+  object-fit: contain;
+  object-position: center;
+}
 
 /*---## ABOUT SECTION ##---*/
 .about-section .row.background {
